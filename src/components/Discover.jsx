@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TabProps from './tabs/TabProps'
 
 const Discover = () => {
@@ -31,6 +31,17 @@ const Discover = () => {
         setActive(active)
     }
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActive((prev) => {
+                const currentIndex = tabs.findIndex((tab) => tab.act === prev);
+                const nextIndex = (currentIndex + 1) % tabs.length;
+                return tabs[nextIndex].act;
+            });
+        }, 18000);
+
+        return () => clearInterval(interval);
+    }, [tabs]);
     const data = {
         stacks: <TabProps
             ml={"0"}

@@ -1,6 +1,7 @@
 import Discover from "@/components/Discover";
 import Index from "@/components/Index";
 import Navigation from "@/components/Reusable/Navigation";
+import Spark from "@/components/Spark";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Navigation />
       <Index />
       <Discover />
+      <Spark />
     </div>
 
   );
