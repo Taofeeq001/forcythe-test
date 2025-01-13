@@ -43,7 +43,7 @@ const Scale = () => {
                     <button className='w-[120px] h-[45px] rounded-full absolute top-[-7px] right-[-7px] bg-white hover:bg-[#60a6e7] hover:duration-200 flex items-center justify-center font-bold'>Book a Call </button>
                 </div>
             </div>
-            <div className='w-full flex flex-col px-[7%]'>
+            <div className='w-full flex flex-col lg:px-[7%] px-[4%]'>
 
                 <div className='flex lg:flex-row flex-col w-full justify-between  gap-10 mt-[10%] pb-[4%]'>
                     <div className='w-full flex flex-col gap-6' >

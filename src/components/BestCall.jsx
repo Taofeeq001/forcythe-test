@@ -5,7 +5,7 @@ const BestCall = () => {
     return (
         <div className='w-full bg-[#040A1E] flex flex-col items-center lg:gap-48 gap-28 my-16'>
 
-            <div className='flex flex-col px-[7%] w-full items-center  gap-8'>
+            <div className='flex flex-col lg:px-[7%] px-[4%] w-full items-center  gap-8'>
                 <p className='lg:text-[42px] text-[#b3d0f2] text-[30px]'>Your best call for B2B/B2C product innovation</p>
                 <div className='flex lg:flex-row flex-col gap-10 justify-between w-full'>
                     <BestProps
@@ -54,4 +54,3 @@ const BestCall = () => {
 }
 
 export default BestCall
- 

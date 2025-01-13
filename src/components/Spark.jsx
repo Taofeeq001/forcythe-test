@@ -40,7 +40,7 @@ const Spark = () => {
 
     }
     return (
-        <div className='flex flex-col gap-5 px-[7%] mt-16'>
+        <div className='flex flex-col gap-5 lg:px-[7%] px-[4%] mt-16'>
             <p className='lg:text-[40px] text-[20px] text-white'>From <span className='text-[#60a6e7]'>Spark</span> to <span className='text-[#60a6e7]'>Spotlight:</span> we take  you <br className='lg:block hidden' /> every step of the way to success.</p>
             <div className='flex lg:flex-row flex-col items-center justify-between w-full '>
                 <div className='w-full'>
@@ -65,10 +65,10 @@ const Spark = () => {
                             <img src='/Images/idea.svg' className='w-[70%]' /> :
                             active == "design" ?
                                 <img src='/Images/phonetab.svg' className='w-[90%]' /> :
-                            active == "dev" ?
-                                <img src='/Images/develop.svg' className='w-[70%]' /> : 
-                            active == "launch" ?
-                                <img src='/Images/launch.svg' className='w-[90%]' /> : ""
+                                active == "dev" ?
+                                    <img src='/Images/develop.svg' className='w-[70%]' /> :
+                                    active == "launch" ?
+                                        <img src='/Images/launch.svg' className='w-[90%]' /> : ""
                     }
                 </div>
 

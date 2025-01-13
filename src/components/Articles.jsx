@@ -27,9 +27,9 @@ const Articles = () => {
         },
     ]
     return (
-        <div className='px-[7%] flex flex-col py-[6%]'>
-            <div className='w-full justify-between flex flex-row items-center'>
-                <p className='text-[42px] font-bold text-white'>Read our articles, news and product blog</p>
+        <div className='lg:px-[7%] px-[4%] flex flex-col py-[6%]'>
+            <div className='w-full justify-between flex lg:flex-row flex-col lg:items-center'>
+                <p className='lg:text-[42px] text-[32px] text-white'>Read our articles, news and product blog</p>
                 <div className='w-[120px] h-[45px] mt-2 border-dashed border-[1px] border-white rounded-full relative cursor-pointer hover:duration-200 hover:border-blue-600'>
                     <button className='w-[120px] h-[45px] rounded-full absolute top-[-7px] right-[-7px] bg-white hover:bg-blue-600 hover:duration-200 flex items-center justify-center font-bold'>Visit Blog </button>
                 </div>

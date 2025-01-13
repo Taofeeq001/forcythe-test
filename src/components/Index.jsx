@@ -4,9 +4,9 @@ import Marquee from "react-fast-marquee";
 const Index = () => {
     return (
         <div className='flex flex-col gap-20'>
-            <div className='px-[7%]'>
+            <div className='lg:lg:px-[7%] px-[4%] px-[4%]'>
                 <div className='w-full bg-[#1D1E2E] rounded-3xl px-10 py-16 flex flex-col gap-5'>
-                    <p className='text-[80px] font-normal text-white leading-none'>We build <span className='text-[#60a6e7]'>products</span> that <br className='lg:block hidden' /> shape a better future</p>
+                    <p className='lg:text-[80px] text-[56px] font-normal text-white leading-none'>We build <span className='text-[#60a6e7]'>products</span> that <br className='lg:block hidden' /> shape a better future</p>
                     <p className='lg:text-[18px] text-[#aea9b1] font-normal'>We’re the architects of digital excellence across industries. We redefine business with <br className='lg:block hidden' /> cutting-edge digital strategies that invokes sector-wide transformation.</p>
                     <div className='w-[120px] h-[45px] border-dashed border-[1px] border-white rounded-full relative cursor-pointer hover:duration-200 hover:border-blue-600'>
                         <button className='w-[120px] h-[45px] rounded-full absolute top-[-7px] right-[-7px] bg-white hover:bg-blue-600 hover:duration-200 flex items-center justify-center font-bold'>Book a Call</button>
