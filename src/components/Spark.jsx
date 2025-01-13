@@ -1,5 +1,9 @@
 'use client'
 import React, { useState } from 'react'
+import Idea from './tabs/sparktab/Idea'
+import Design from './tabs/sparktab/Design'
+import Develop from './tabs/sparktab/Develop'
+import Launch from './tabs/sparktab/Launch'
 
 const Spark = () => {
     const [active, setActive] = useState("idea")
@@ -29,10 +33,10 @@ const Spark = () => {
         setActive(e)
     }
     const data = {
-        idea: "",
-        design: "",
-        dev: "",
-        launch: "",
+        idea: <Idea />,
+        design: <Design />,
+        dev: <Develop />,
+        launch: <Launch />,
 
     }
     return (
@@ -44,16 +48,27 @@ const Spark = () => {
                         <div className='flex flex-row w-full justify-between items-center'>
                             {
                                 tabs.map((t, index) => (
-                                    <div key={index} onClick={() => handleClick(t.act)} className={`w-full text-white flex items-center justify-center rounded-full py-3 font-bold ${active === t.act ? "bg-[#B3D0F2] text-[#0D0F11]" : ""}`}>{t.name}</div>
+                                    <div key={index} onClick={() => handleClick(t.act)} className={`w-full text-white cursor-pointer flex items-center justify-center rounded-full py-3 font-bold ${active === t.act ? "bg-[#B3D0F2] text-[#0D0F11]" : ""}`}>{t.name}</div>
                                 ))
                             }
                         </div>
+                    </div>
+                    <div className='mt-4'>
+                        {
+                            data[active]
+                        }
                     </div>
                 </div>
                 <div className='w-full flex lg:justify-end justify-center'>
                     {
                         active == "idea" ?
-                            <img src='/Images/idea.svg' className='w-[70%]' /> : ""
+                            <img src='/Images/idea.svg' className='w-[70%]' /> :
+                            active == "design" ?
+                                <img src='/Images/phonetab.svg' className='w-[90%]' /> :
+                            active == "dev" ?
+                                <img src='/Images/develop.svg' className='w-[70%]' /> : 
+                            active == "launch" ?
+                                <img src='/Images/launch.svg' className='w-[90%]' /> : ""
                     }
                 </div>
 

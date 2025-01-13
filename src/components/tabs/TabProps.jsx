@@ -10,7 +10,7 @@ const TabProps = ({ company, description, position, img, ml }) => {
                         words={[company]}
                         loop={1}
                         typeSpeed={100}
-                        delaySpeed={1000}
+                        delaySpeed={1000} f
                     />
                 </p>
                 <p className='font-semibold lg:text-[16px] leading-loose items-start'>
