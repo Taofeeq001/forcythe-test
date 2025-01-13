@@ -1,6 +1,8 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { FaPlay } from 'react-icons/fa6'
 
 const Articles = () => {
     const blog = [
@@ -30,8 +32,8 @@ const Articles = () => {
         <div className='lg:px-[7%] px-[4%] flex flex-col py-[6%]'>
             <div className='w-full justify-between flex lg:flex-row flex-col lg:items-center'>
                 <p className='lg:text-[42px] text-[32px] text-white'>Read our articles, news and product blog</p>
-                <div className='w-[120px] h-[45px] mt-2 border-dashed border-[1px] border-white rounded-full relative cursor-pointer hover:duration-200 hover:border-blue-600'>
-                    <button className='w-[120px] h-[45px] rounded-full absolute top-[-7px] right-[-7px] bg-white hover:bg-blue-600 hover:duration-200 flex items-center justify-center font-bold'>Visit Blog </button>
+                <div className='w-[130px] h-[45px] border-dashed border-[1px] border-white rounded-full relative cursor-pointer hover:duration-200 hover:border-blue-600'>
+                    <button className='w-[130px] h-[45px] rounded-full absolute top-[-7px] right-[-7px] bg-white hover:bg-blue-600 hover:text-white hover:duration-200 flex items-center justify-center font-bold gap-2'>Book a Call <FaPlay className='hover:text-white text-black' /></button>
                 </div>
             </div>
             <div className="flex lg:flex-row flex-col mt-5 items-center justify-between w-full gap-9">
