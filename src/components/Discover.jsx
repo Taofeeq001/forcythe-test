@@ -76,7 +76,7 @@ const Discover = () => {
             company={"Stac AI"}
             description={"Forcythe is seriously amazing when it comes to coming up with new ideas. They took our rough ideas and turned them into something incredible online. Their team’s commitment to our vision was evident every step of the way."}
             position={"Edwin, Former CTO"}
-            img={"/Images/edwin.svg"}
+            img={"/Images/founder.svg"}
         />,
 
 
@@ -84,7 +84,7 @@ const Discover = () => {
     return (
         <div className='mt-20 lg:px-[7%] px-[4%] flex flex-col gap-2'>
             <div className='flex w-full items-center justify-center'>
-                <p className='lg:text-[42px] text-white text-center leading-normal'>Discover the <span className='text-[#60a6e7]'>transformative stories</span> <br className='lg:block hidden' /> of startups  that scaled new heights with us</p>
+                <p className='lg:text-[42px] text-[32px] text-white text-center leading-normal'>Discover the <span className='text-[#60a6e7]'>transformative stories</span> <br className='lg:block hidden' /> of startups  that scaled new heights with us</p>
             </div>
             <div className='flex flex-col gap-6'>
                 <div className='border-[0.5px] border-[#60a6e7] w-full overflow-hidden rounded-full h-[65px] flex'>
