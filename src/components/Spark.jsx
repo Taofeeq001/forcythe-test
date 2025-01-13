@@ -48,7 +48,7 @@ const Spark = () => {
                         <div className='flex flex-row w-full justify-between items-center'>
                             {
                                 tabs.map((t, index) => (
-                                    <div key={index} onClick={() => handleClick(t.act)} className={`w-full text-white cursor-pointer flex items-center justify-center rounded-full py-3 font-bold ${active === t.act ? "bg-[#B3D0F2] text-[#0D0F11]" : ""}`}>{t.name}</div>
+                                    <div key={index} onClick={() => handleClick(t.act)} className={`w-full text-white cursor-pointer flex items-center justify-center rounded-full py-3 font-bold ${active === t.act ? "bg-[#B3D0F2] text-[#070809]" : ""}`}>{t.name}</div>
                                 ))
                             }
                         </div>
