@@ -1,6 +1,10 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import TabProps from './tabs/TabProps'
+import Stacks from './tabs/discoverTab/Stacks'
+import Executive from './tabs/discoverTab/Executive'
+import Stacai from './tabs/discoverTab/Stacai'
+import Beaupreneur from './tabs/discoverTab/Beaupreneur'
 
 const Discover = () => {
     const [active, setActive] = useState("stacks")
@@ -43,41 +47,17 @@ const Discover = () => {
         return () => clearInterval(interval);
     }, [tabs]);
     const data = {
-        stacks: <TabProps
-            ml={"0"}
-            company={"Starks Associate"}
-            description={"Partnering with Forcythe was like finding a hidden gem. Their genuine interest in our success was palpable, and the continuous support post-launch has been a testament to their commitment. They’ve become more than a service provider; they’re a trusted ally."}
-            position={"Starks Associate"}
-            img={"/Images/associate.svg"}
-        />,
-        executive: <TabProps
-            ml={"lg:ml-[20%]"}
-            company={"IwariaExecutivePros"}
-            description={"The team understood the assignment and delivered very well. One of the things that stood them out was how they took our concepts and turned it into visually appealing designs that caught the eyes of our clients and made increased web engagements. Kudos!"}
-            position={"Testimony, Co-founder"}
-            img={"/Images/executive-pro-ceo.svg"}
-        />,
-        stacai: <TabProps
-            ml={"lg:ml-[40%]"}
-            company={"Stac AI"}
-            description={"Forcythe is seriously amazing when it comes to coming up with new ideas. They took our rough ideas and turned them into something incredible online. Their team’s commitment to our vision was evident every step of the way."}
-            position={"Edwin, Former CTO"}
-            img={"/Images/edwin.svg"}
-        />,
+        stacks: <Stacks />,
+        executive: <Executive />,
+        stacai: <Stacai />,
         iwaria: <TabProps
             ml={"lg:ml-[30%]"}
-            company={"Stac AI"}
-            description={"Forcythe is seriously amazing when it comes to coming up with new ideas. They took our rough ideas and turned them into something incredible online. Their team’s commitment to our vision was evident every step of the way."}
-            position={"Edwin, Former CTO"}
-            img={"/Images/edwin.svg"}
+            company={"Iwaria"}
+            description={"The moment we engaged Forcythe, it was clear they were in a league of their own. Their strategic approach to our project not only enhanced our online platform but also enriched our brand’s story, captivating our audience like never before."}
+            position={"Iwaria, Founder"}
+            img={"/Images/iwariafounder.svg"}
         />,
-        beaupreneur: <TabProps
-            ml={"lg:ml-[47%]"}
-            company={"Stac AI"}
-            description={"Forcythe is seriously amazing when it comes to coming up with new ideas. They took our rough ideas and turned them into something incredible online. Their team’s commitment to our vision was evident every step of the way."}
-            position={"Edwin, Former CTO"}
-            img={"/Images/founder.svg"}
-        />,
+        beaupreneur: <Beaupreneur />,
 
 
     }
